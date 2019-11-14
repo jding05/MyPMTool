@@ -11,6 +11,9 @@
 # production
 /build
 
+# sample styling
+/sample
+
 # misc
 .DS_Store
 .env.local
