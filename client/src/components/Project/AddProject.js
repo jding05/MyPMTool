@@ -12,6 +12,11 @@ class AddProject extends Component {
       end_date: ""
     };
   }
+
+  onChange(e) {
+    this.setState({ projectName: e.target.value });
+  }
+
   render() {
     return (
       <div>
@@ -29,6 +34,7 @@ class AddProject extends Component {
                       placeholder="Project Name"
                       name="projectName"
                       value={this.state.projectName}
+                      onChange={this.onChange.bind(this)}
                     />
                   </div>
                   <div className="form-group">
