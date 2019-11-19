@@ -1,9 +1,9 @@
 # MyPMTool
 
 ## Tech stack
-Frontend: React, Redux
-Backend: Java Spring Boot
-Database: MySQL (H2, JPA)
+**Frontend:** React, Redux<br>
+**Backend:** Java Spring Boot<br>
+**Database:** MySQL (H2, JPA)<br>
 
 ## Application Figures
 ![](assets/project_dashboard.png)
