@@ -11,10 +11,12 @@ class AddProject extends Component {
       start_date: "",
       end_date: ""
     };
+
+    this.onChange = this.onChange.bind(this);
   }
 
   onChange(e) {
-    this.setState({ projectName: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
@@ -34,7 +36,7 @@ class AddProject extends Component {
                       placeholder="Project Name"
                       name="projectName"
                       value={this.state.projectName}
-                      onChange={this.onChange.bind(this)}
+                      onChange={this.onChange}
                     />
                   </div>
                   <div className="form-group">
@@ -44,6 +46,7 @@ class AddProject extends Component {
                       placeholder="Unique Project ID"
                       name="projectIdentifier"
                       value={this.state.projectIdentifier}
+                      onChange={this.onChange}
                     />
                   </div>
 
@@ -53,6 +56,7 @@ class AddProject extends Component {
                       placeholder="Project Description"
                       name="description"
                       value={this.state.description}
+                      onChange={this.onChange}
                     ></textarea>
                   </div>
                   <h6>Start Date</h6>
@@ -62,6 +66,7 @@ class AddProject extends Component {
                       className="form-control form-control-lg"
                       name="start_date"
                       value={this.state.start_date}
+                      onChange={this.onChange}
                     />
                   </div>
                   <h6>Estimated End Date</h6>
@@ -71,6 +76,7 @@ class AddProject extends Component {
                       className="form-control form-control-lg"
                       name="end_date"
                       value={this.state.end_date}
+                      onChange={this.onChange}
                     />
                   </div>
 
